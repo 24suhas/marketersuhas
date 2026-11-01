@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFD21F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Suhas Kshirsagar – Websites &amp; Digital Marketing">
+<meta property="og:description" content="Fast, mobile-ready websites and digital marketing that brings in enquiries.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%23FFD21F' stroke='%233F2F00' stroke-width='7'/%3E%3C/svg%3E">
+<meta name="description" content="Website creation and digital marketing services to help your business get found and grow online.">
+<title>Suhas Kshirsagar – Websites & Digital Marketing</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Kalam:wght@400;700&family=Permanent+Marker&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--y50:#FFFCEB;--y100:#FFF6C2;--y200:#FFEC8A;--y300:#FFE04D;--y400:#FFD21F;--y500:#F5BE00;--y800:#6B5000;--y900:#3F2F00;--w:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--w);color:var(--y900);font-family:'Archivo',Arial,sans-serif;line-height:1.55;font-size:15px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--y900);outline-offset:3px}
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:400}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+section{position:relative;padding:110px 0}
+.no{position:absolute;top:56px;right:28px;font-size:13px}
+h2{font-size:clamp(36px,5.4vw,60px);font-weight:400;text-transform:uppercase;line-height:1.05;letter-spacing:-.01em}
+.ph{background:repeating-linear-gradient(135deg,var(--y100) 0 14px,var(--y200) 14px 28px);border:2px solid var(--y900);display:grid;place-items:center;text-align:center;font-size:12px;color:var(--y800);padding:8px}
+.cap{font-size:12px;text-transform:uppercase;color:var(--y800)}
+.lists h4{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:19px;margin:0 0 8px}
+.lists ul{list-style:none;padding:0;margin-bottom:22px}
+.lists li{font-size:14px;text-transform:uppercase;padding:2px 0}
+.lists li::before{content:"– "}
+/* hero */
+.hero{background:var(--y400);text-align:center;padding:72px 0 80px}
+.hero .name{font-size:clamp(44px,8vw,92px);line-height:1}
+.hero h1{font-weight:400;font-size:clamp(54px,13vw,168px);line-height:.95;margin:56px 0 18px;letter-spacing:-.02em;text-transform:uppercase}
+.hero p{font-size:15px}
+.pill{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--y400);border:2px solid var(--y900);border-radius:999px;padding:12px 22px;font-weight:500;text-decoration:none;box-shadow:4px 4px 0 var(--y900)}
+.pill:hover{background:var(--y300)}
+/* about */
+.about .g{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:24px;align-items:start}
+.about .ph.a{aspect-ratio:1;max-width:320px;grid-column:2}
+.about p{grid-column:2;grid-row:2;font-size:14px;margin-top:40px;max-width:24em}
+.about .ph.b{grid-column:3;grid-row:2;height:200px;width:170px;justify-self:end;transform:rotate(7deg)}
+/* services */
+.exp .g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:80px}
+.exp .ph{height:230px;align-self:end}
+/* skills */
+.skills .g{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.skills h2{text-align:center;margin-bottom:-24px;position:relative;z-index:2}
+.skills .ph{height:260px;margin-top:0}
+.skills .lists{padding-top:40px}
+/* work */
+.work h2{text-align:center;margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;align-items:start}
+.cards article:nth-child(2){margin-top:40px}
+.cards .ph{height:190px;margin-bottom:12px}
+.cards h3{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:20px}
+/* statement */
+.state{text-align:center;padding:130px 0}
+.state p.big{font-size:clamp(38px,8vw,96px);line-height:1.05;text-transform:uppercase}
+.state em{font-family:'Fraunces',Georgia,serif;font-style:italic}
+.state .ph{display:inline-grid;vertical-align:middle;width:clamp(70px,11vw,140px);height:clamp(44px,6vw,76px);margin:0 10px;font-size:0;padding:0}
+/* results */
+.res .top{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin-bottom:48px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:760px;margin:0 auto}
+.tile{aspect-ratio:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:10px;border:2px solid var(--y900);margin:0 -2px -2px 0}
+.tile b{font-size:clamp(26px,4.4vw,48px);font-weight:400;line-height:1}
+.tile span{font-size:11px;text-transform:uppercase}
+.t1{background:var(--y400)}.t2{background:var(--w)}.t3{background:var(--y200)}.t4{background:var(--y50)}.t5{background:var(--y100)}.t6{background:var(--y500)}.t7{background:var(--w)}.t8{background:var(--y300)}
+.tile.rot{transform:rotate(5deg);position:relative;z-index:2}
+/* contact */
+.contact{background:var(--y400);padding:90px 0}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.contact .small{font-size:14px;margin-bottom:24px}
+.contact h2{margin-bottom:48px}
+.contact a.l{display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(20px,3vw,28px);text-decoration:none;margin:10px 0}
+.contact a.l:hover{text-decoration:underline}
+.contact .ph{aspect-ratio:1;max-width:380px;margin-left:auto;transform:rotate(5deg);background:repeating-linear-gradient(135deg,var(--y50) 0 14px,var(--y100) 14px 28px)}
+footer{background:var(--y900);color:var(--y100);text-align:center;font-size:13px;padding:22px}
+@media(max-width:820px){
+  section{padding:80px 0}.no{top:30px}
+  .about .g,.exp .g,.skills .g,.cards,.res .top,.contact .wrap{grid-template-columns:1fr}
+  .about .ph.a,.about p,.about .ph.b{grid-column:1;grid-row:auto}
+  .about p{margin-top:0}.cards article:nth-child(2){margin-top:0}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .skills h2{margin-bottom:12px}.exp .g{margin-top:40px}
+}
+/* ===== sketchbook style ===== */
+body{font-family:'Kalam','Comic Sans MS',cursive;font-size:17px;line-height:1.7;background-color:var(--w);background-image:repeating-linear-gradient(transparent 0 33px,var(--y100) 33px 34px);text-shadow:.4px .4px 0 rgba(63,47,0,.35)}
+h1,h2,.name,.state p.big,.pill{font-family:'Permanent Marker','Marker Felt',cursive;font-weight:400}
+.serif,.lists h4,.cards h3,.contact a.l,.state em,.no,.cap,.tile span,.note{font-family:'Caveat','Segoe Script',cursive}
+h1,h2,.name,.state p.big,.tile,.ph,.pill,.lists li,.note,.cards h3{filter:url(#pencil)}
+h2{font-size:clamp(32px,5vw,54px)}
+h2::after{content:"";display:block;width:min(240px,70%);height:14px;margin-top:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M2 8Q20 0 40 8T80 8T120 8T160 8T198 7' fill='none' stroke='%233F2F00' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;background-size:100% 100%}
+.work h2::after,.skills h2::after{margin-left:auto;margin-right:auto}
+.hero .name{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(54px,9vw,104px)}
+.hero h1{font-size:clamp(46px,11vw,140px);animation:write 1.6s steps(24,end) .2s backwards}
+@keyframes write{from{clip-path:inset(-10% 100% -10% 0)}to{clip-path:inset(-10% 0 -10% 0)}}
+.hero p{font-size:19px}
+.no{font-size:26px;font-weight:700}
+.cap{font-size:19px;text-transform:none;line-height:1.3}
+.lists h4{font-size:28px;font-weight:700}
+.lists li{text-transform:none;font-size:17px}
+.lists li::before{content:"\2192  "}
+.cards h3{font-size:28px;font-weight:700}
+.contact a.l{font-size:clamp(24px,3.4vw,34px);font-weight:700}
+.state em{font-style:normal;font-weight:700;background:linear-gradient(transparent 52%,var(--y300) 52%,var(--y300) 90%,transparent 90%);padding:0 .08em}
+.tile span{font-size:19px;text-transform:none}
+.tile b.serif{font-weight:700;font-size:clamp(34px,5.4vw,60px)}
+.ph{position:relative;border-radius:255px 18px 225px 18px/18px 225px 18px 255px;font-family:'Caveat',cursive;font-size:20px;box-shadow:5px 5px 0 var(--y300)}
+.ph::before{content:"";position:absolute;top:-12px;left:50%;width:76px;height:22px;margin-left:-38px;background:rgba(255,224,77,.8);border:1px dashed var(--y500);transform:rotate(-4deg)}
+.state .ph::before{display:none}.state .ph{box-shadow:none}
+.tile{border-radius:14px 3px 16px 4px/4px 16px 3px 14px}
+.pill{border-radius:30px 8px 26px 8px/8px 26px 8px 30px;font-size:18px}
+.note{display:inline-block;font-size:25px;font-weight:700;color:var(--y800);transform:rotate(-3deg);line-height:1.2}
+.hero .note{margin-top:22px;background:var(--w);border:2px solid var(--y900);border-radius:20px 6px 18px 6px;padding:2px 16px}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}}
+/* ===== motion ===== */
+body{overflow-x:hidden}
+.prog{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:6px;background:var(--y500);border-bottom:2px solid var(--y900);transform:scaleX(0);transform-origin:left;z-index:40}
+.rv{opacity:0;translate:0 26px;transition:opacity .7s ease,translate .7s cubic-bezier(.2,.8,.2,1)}
+.rv.l{translate:-18px 0}
+.rv.in{opacity:1;translate:0 0}
+h2.rv::after{transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.3,.7,.2,1) .35s}
+h2.in::after{transform:scaleX(1)}
+.ph,.tile{transition:rotate .25s,scale .25s,opacity .7s ease,translate .7s cubic-bezier(.2,.8,.2,1)}
+.ph:hover{rotate:-2.5deg;scale:1.04}
+.tile:hover{scale:1.08;rotate:-2deg;z-index:4}
+.state em{background-repeat:no-repeat;background-size:0% 100%;transition:background-size 1s ease .5s}
+.state p.big.in em{background-size:100% 100%}
+.note{animation:sway 3.6s ease-in-out infinite}
+@keyframes sway{0%,100%{rotate:-1.5deg}50%{rotate:1.5deg}}
+.pill{transition:rotate .2s,scale .2s,background .2s;animation:nudge 6s ease-in-out 3s infinite}
+.pill:hover{rotate:-3deg;scale:1.06;animation:none}
+@keyframes nudge{0%,88%,100%{rotate:0deg}91%{rotate:-4deg}94%{rotate:4deg}97%{rotate:-2deg}}
+.hero{position:relative;overflow:hidden}
+.hero::before,.hero::after{position:absolute;font-size:52px;color:var(--y900);opacity:.55;animation:spin 16s linear infinite}
+.hero::before{content:"\2726";left:7%;top:20%}
+.hero::after{content:"\273A";right:8%;bottom:22%;animation-duration:22s;animation-direction:reverse}
+@keyframes spin{to{rotate:360deg}}
+.tick{background:var(--w);border-block:3px solid var(--y900);overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg);margin:-16px -12px 0;position:relative;z-index:3;box-shadow:0 6px 0 var(--y300)}
+.tick div{display:inline-block;padding:12px 0;font-family:'Permanent Marker','Marker Felt',cursive;font-size:24px;animation:slide 26s linear infinite}
+.tick span{margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tick div,.note,.pill,.hero::before,.hero::after{animation:none}.rv{opacity:1;translate:none}}
+/* ===== navigation, back-to-top, page transition ===== */
+html{scroll-padding-top:56px}
+.nav{position:sticky;top:calc(6px + env(safe-area-inset-top,0px));z-index:35;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 28px;background:rgba(255,252,235,.95);backdrop-filter:blur(6px);border-bottom:2px solid var(--y900)}
+.nav .brand{font-family:'Caveat',cursive;font-weight:700;font-size:30px;text-decoration:none;white-space:nowrap}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{position:relative;padding:2px 12px;text-decoration:none;font-family:'Caveat',cursive;font-size:24px;font-weight:700;white-space:nowrap;transition:background .3s}
+.links a::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:3px;border-radius:3px;background:var(--y900);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.links a:hover::after{transform:scaleX(1)}
+.links a.on{background:linear-gradient(transparent 48%,var(--y300) 48%,var(--y300) 92%,transparent 92%)}
+.totop{position:fixed;right:22px;bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;display:grid;place-items:center;background:var(--w);border:2px solid var(--y900);border-radius:52% 48% 55% 45%/48% 55% 45% 52%;box-shadow:4px 4px 0 var(--y900);font-family:'Permanent Marker',cursive;font-size:30px;text-decoration:none;opacity:0;scale:.2;translate:0 60px;rotate:-40deg;pointer-events:none;transition:opacity .3s,scale .5s cubic-bezier(.34,1.7,.5,1),translate .5s cubic-bezier(.34,1.7,.5,1),rotate .5s cubic-bezier(.34,1.7,.5,1),background .2s}
+.totop.show{opacity:1;scale:1;translate:0 0;rotate:0deg;pointer-events:auto}
+.totop.show:hover{background:var(--y300);scale:1.1;rotate:-6deg}
+.totop span{display:block}
+.totop.show span{animation:hop 1.8s ease-in-out 1s infinite}
+@keyframes hop{0%,100%{translate:0 0}50%{translate:0 -5px}}
+.chip{position:fixed;left:16px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;gap:8px;align-items:center;background:var(--y100);border:2px solid var(--y900);border-radius:18px 6px 16px 6px;padding:2px 14px;font-family:'Caveat',cursive;font-size:23px;font-weight:700;opacity:0;translate:0 20px;transition:opacity .3s,translate .4s;pointer-events:none}
+.chip.show{opacity:1;translate:0 0}
+.chip.flip span{animation:flipin .45s ease}
+@keyframes flipin{from{translate:0 14px;opacity:0}to{translate:0 0;opacity:1}}
+.wipe{position:fixed;inset:0;z-index:60;background:repeating-linear-gradient(135deg,var(--y400) 0 18px,var(--y300) 18px 36px);transform:translateX(-105%);display:grid;place-items:center;pointer-events:none;border-radius:0 60% 60% 0/0 50% 50% 0;border-right:6px solid var(--y900)}
+.wipe span{font-family:'Permanent Marker',cursive;font-size:clamp(36px,9vw,104px);text-align:center;padding:0 20px}
+@media(max-width:700px){.nav .brand{display:none}.nav{padding:4px 10px}.totop{right:16px}.pill{right:14px}}
+@media(prefers-reduced-motion:reduce){.totop.show span{animation:none}}
+/* ===== mobile ===== */
+@media(max-width:820px){
+  .wrap{padding:0 20px}
+  .no{right:20px;font-size:22px}
+  .about .g{margin-top:0!important;gap:18px}
+  .about .g>span{display:none}
+  .about .ph.a{max-width:260px}
+  .about .ph.b{width:150px;height:190px;justify-self:end}
+  .exp .ph,.skills .ph{height:200px}
+  .contact{padding:70px 0}
+  .contact .ph{max-width:300px;margin:10px auto 0}
+  .res .top{margin-bottom:28px}
+  .state{padding:90px 0}
+  .hero{padding:56px 0 64px}
+  .hero::before,.hero::after{font-size:30px;opacity:.4}
+  .tick div{font-size:20px}.tick span{margin:0 16px}
+}
+@media(max-width:700px){
+  body{font-size:16px}
+  .links a{padding:6px 12px}
+  .ph,.tile,.pill,.lists li,.note,.cards h3{filter:none}
+  .note{font-size:22px}
+  .tile.rot{transform:none}
+  .pill{font-size:16px;padding:10px 18px}
+  .totop{width:50px;height:50px;font-size:26px;bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .chip{font-size:20px;padding:0 12px}
+  .cards .ph{height:170px}
+}
+@media(max-width:380px){.hero h1{font-size:40px}h2{font-size:30px}}
+@media(hover:none){.ph:hover,.tile:hover,.totop.show:hover{scale:1;rotate:0deg}}
+/* ===== stacked pages ===== */
+.page{position:sticky;top:0;transform-origin:50% 100%;scale:calc(1 - var(--p,0) * .07);opacity:calc(1 - var(--p,0) * .55)}
+.page:not(.hero):not(.contact){background-color:var(--w);background-image:repeating-linear-gradient(transparent 0 33px,var(--y100) 33px 34px)}
+.page:not(.hero){border-top:3px solid var(--y900);border-radius:34px 34px 0 0;box-shadow:0 -12px 34px rgba(63,47,0,.3)}
+.hero{padding-bottom:140px}
+.hero .tick{position:absolute;left:-12px;right:-12px;bottom:24px;margin:0}
+footer{position:relative;z-index:5}
+@media(max-width:700px){.page:not(.hero){border-radius:22px 22px 0 0}.hero{padding-bottom:120px}}
+/* ===== real photos ===== */
+.ph.img{padding:0;filter:none;background:var(--y100)}
+.ph.img::before{z-index:2}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.about .ph.a img{object-position:50% 22%}
+.about .ph.b img{object-position:38% 60%}
+.exp .ph img{object-position:62% 50%}
+.contact .ph img{object-position:50% 30%}
+/* ===== professional polish ===== */
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;line-height:1.65;text-shadow:none}
+.lists li,.contact .intro,.lead{font-family:'DM Sans',Arial,sans-serif}
+.lead{max-width:34em;margin:18px 0 0;color:var(--y800);font-size:18px}
+.work .lead{text-align:center;margin:-36px auto 44px}
+.hero .tag{font-size:20px;font-weight:700;margin-bottom:6px}
+.hero .sub{max-width:34em;margin:0 auto 28px;color:var(--y800)}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 28px;border:2px solid var(--y900);border-radius:999px;font-weight:700;text-decoration:none;background:var(--y900);color:var(--w);box-shadow:4px 4px 0 var(--y500);transition:translate .15s,box-shadow .15s}
+.btn.alt{background:var(--w);color:var(--y900)}
+.btn:hover{translate:2px 2px;box-shadow:2px 2px 0 var(--y500)}
+.navcta{background:var(--y400);border:2px solid var(--y900);border-radius:999px;padding:1px 16px;font-family:'Caveat',cursive;font-weight:700;font-size:23px;text-decoration:none;white-space:nowrap}
+.navcta:hover{background:var(--y300)}
+.cards .cap{font-family:'DM Sans',Arial,sans-serif;font-size:15px;line-height:1.55;color:var(--y800)}
+.cards h3{margin-bottom:4px}
+.ph.slot{border-style:dashed;background:var(--y50);font-family:'Caveat',cursive;font-size:28px;font-weight:700;line-height:1.1}
+.ph.slot::before{display:none}
+.ab{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:center;margin-top:44px}
+.about .ab .ph.a{grid-column:auto;max-width:none;width:100%;aspect-ratio:1}
+.about .txt h3{font-family:'Permanent Marker',cursive;font-weight:400;font-size:34px;line-height:1.1;margin:4px 0 14px}
+.about .txt p{grid-column:auto;grid-row:auto;font-size:17px;margin:0 0 14px;max-width:34em}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.facts span{background:var(--y100);border:2px solid var(--y300);border-radius:999px;padding:4px 16px;font-weight:500;font-size:15px}
+.about .ph.wide{aspect-ratio:1300/560;width:100%;max-width:none;height:auto;grid-column:auto;margin-top:64px;transform:none}
+.about .wcap{text-align:center;margin-top:18px}
+.contact .ph{width:100%}
+.contact .intro{font-size:18px;margin:-22px 0 26px;max-width:26em}
+footer{text-align:left;font-size:15px;padding:44px 0 22px}
+footer .fw{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid var(--y800)}
+footer b{font-family:'Caveat',cursive;font-size:30px;color:var(--w)}
+footer p{margin-top:4px;color:var(--y200)}
+footer .fl{display:flex;gap:22px;align-items:flex-start}
+footer a{color:var(--y100);text-decoration:none}
+footer a:hover{color:var(--y300);text-decoration:underline}
+footer .copy{max-width:1100px;margin:18px auto 0;padding:0 28px;font-size:13px;color:var(--y200)}
+@media(max-width:820px){.ab{grid-template-columns:1fr;gap:28px}.about .ab .ph.a{max-width:300px}.about .ph.wide{margin-top:44px}.navcta{display:none}.work .lead{margin:-30px auto 36px}footer .fl{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="pencil" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter></svg>
+<a class="pill" href="#contact">Work with me</a>
+<a class="totop" href="#top" aria-label="Back to top"><span>↑</span></a>
+
+<nav class="nav" aria-label="Sections"><a class="brand" href="#top">Suhas Kshirsagar</a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#results">Results</a><a href="#contact">Contact</a></div><a class="navcta" href="#contact">Let’s talk</a></nav>
+<header class="hero page" id="top"><div class="wrap">
+  <div class="name serif">Suhas Kshirsagar</div>
+  <h1>Marketing</h1>
+  <p class="tag">Website Creator &amp; Digital Marketer</p>
+  <p class="sub">I build fast, mobile-ready websites and run digital marketing that brings you enquiries, not just visitors.</p>
+  <div class="cta"><a class="btn" href="#work">See my work</a><a class="btn alt" href="#contact">Get in touch</a></div>
+  <span class="note">scroll down ↓</span>
+<div class="tick" aria-hidden="true"><div><span>Website Design ✦</span><span>SEO ✦</span><span>Instagram ✦</span><span>Google Ads ✦</span><span>Lead Generation ✦</span><span>Branding ✦</span><span>Website Design ✦</span><span>SEO ✦</span><span>Instagram ✦</span><span>Google Ads ✦</span><span>Lead Generation ✦</span><span>Branding ✦</span></div></div>
+</header>
+
+
+<section class="work page" id="work"><span class="no">02</span><div class="wrap">
+  <h2>My work</h2>
+  <p class="lead">Selected projects. I’m taking on a few new clients, so your brand could be next.</p>
+  <div class="cards">
+    <article><div class="ph img"><img src="images/working-at-desk.jpg" alt="Suhas building a website at his desk" loading="lazy" decoding="async"></div><h3>My personal brand website</h3><p class="cap">Designed, built and launched by me. Fast, mobile-ready and made to turn visitors into enquiries.</p></article>
+    <article><div class="ph slot"><span>Your project<br>goes here</span></div><h3>Next client project</h3><p class="cap">A business website built around your brand, your customers and your goals.</p></article>
+    <article><div class="ph slot"><span>Your growth<br>campaign</span></div><h3>Marketing campaign</h3><p class="cap">SEO, social media and ads working together to bring you the right leads.</p></article>
+  </div>
+</div></section>
+
+<section class="about page" id="about"><span class="no">03</span><div class="wrap">
+  <h2>A little<br>about me</h2>
+  <div class="ab">
+    <div class="ph a img"><img src="images/suhas-headshot.jpg" alt="Suhas Kshirsagar" loading="lazy" decoding="async"></div>
+    <div class="txt">
+      <span class="note">ye main hoon ←</span>
+      <h3>Hi, I’m Suhas.</h3>
+      <p>I’m a website creator and digital marketer helping small businesses get found online and turn visitors into customers. I handle the whole job myself, from design and development to SEO, ads and social media.</p>
+      <p>You get one point of contact, clear communication and work built around results, not buzzwords.</p>
+      <div class="facts"><span>Website Design</span><span>SEO</span><span>Social Media</span><span>Paid Ads</span><span>Lead Generation</span></div>
+    </div>
+  </div>
+  <div class="ph wide img"><img src="images/workspace-desk.jpg" alt="Suhas’s full desk setup with laptop, microphone, monitor and notebook" loading="lazy" decoding="async"></div>
+  <p class="cap wcap">My desk: where every website and campaign gets made.</p>
+</div></section>
+
+<section class="exp page" id="services"><span class="no">04</span><div class="wrap">
+  <h2>What I<br>do for you</h2>
+  <p class="lead">Everything you need to get found online and turn visitors into customers.</p>
+  <div class="g lists">
+    <div><h4>Website work</h4><ul><li>Business websites</li><li>Landing pages</li><li>Online stores</li><li>Speed and mobile fixes</li></ul></div>
+    <div><h4>Marketing work</h4><ul><li>SEO</li><li>Instagram and Facebook</li><li>Google and Meta ads</li><li>Email and WhatsApp</li></ul></div>
+    <div class="ph img"><img src="images/working-at-desk.jpg" alt="Suhas working on a website at his desk" loading="lazy" decoding="async"></div>
+  </div>
+</div></section>
+
+<section class="skills page" id="skills"><span class="no">05</span><div class="wrap">
+  <h2>Skills &amp;<br>expertise</h2>
+  <div class="g">
+    <div class="ph img"><img src="images/workspace-desk.jpg" alt="Desk setup with laptop, mic and notebook" loading="lazy" decoding="async"></div>
+    <div class="lists">
+      <h4>Digital marketing <span class="note">(meri favourite!)</span></h4><ul><li>Search engine optimisation</li><li>Paid campaigns</li><li>Social media strategy</li><li>Lead generation</li></ul>
+      <h4>Design and content</h4><ul><li>Branding and logos</li><li>Website copywriting</li><li>Reels and post design</li></ul>
+    </div>
+  </div>
+</div></section>
+
+
+
+<section class="state page"><span class="no">06</span><div class="wrap">
+  <p class="big">I help brands<br><em>get found</em> <span class="ph"></span><br><span class="ph"></span> and grow online</p>
+</div></section>
+
+<section class="res page" id="results"><span class="no">07</span><div class="wrap">
+  <div class="top"><h2>Results<br>so far</h2><p class="cap">Abhi shuru kiya hai: pehli website meri apni. Agli aapki ho sakti hai.</p></div>
+  <div class="tiles">
+    <div class="tile t1"><b>1</b><span>Website built</span></div>
+    <div class="tile t2"><b class="serif">1</b><span>Brand, my own</span></div>
+    <div class="tile t3"><b>1</b><span>Person, start to end</span></div>
+    <div class="tile t4 rot"><b class="serif">1</b><span>Chat to begin</span></div>
+    <div class="tile t5"><b>1</b><span>Goal: your growth</span></div>
+    <div class="tile t6"><b class="serif">1</b><span>Client slot open</span></div>
+    <div class="tile t7"><b>1</b><span>Page, no clutter</span></div>
+    <div class="tile t8"><b class="serif">1</b><span>Next: yours</span></div>
+  </div>
+</div></section>
+
+<section class="contact page" id="contact"><span class="no">08</span><div class="wrap">
+  <div>
+    <p class="small serif">Suhas Kshirsagar</p>
+    <h2>Work<br>with me</h2>
+    <p class="intro">Have a project or an idea? Send me a message and I’ll get back to you with a clear plan.</p>
+    <a class="l" href="https://wa.me/910000000000">WhatsApp: +91 00000 00000</a>
+    <a class="l" href="mailto:hello@yourname.com">hello@yourname.com</a>
+    <a class="l" href="tel:+910000000000">Call: +91 00000 00000</a>
+  </div>
+  <div class="ph img"><img src="images/suhas-portrait.jpg" alt="Suhas Kshirsagar portrait" loading="lazy" decoding="async"></div>
+</div></section>
+
+<footer><div class="wrap fw"><div><b>Suhas Kshirsagar</b><p>Websites &amp; digital marketing for growing businesses.</p></div><div class="fl"><a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div></div><p class="copy">© 2026 Suhas Kshirsagar. All rights reserved.</p></footer>
+<script>
+(function(){
+  var bar=document.createElement('div');bar.className='prog';document.body.appendChild(bar);
+  function up(){var h=document.documentElement;var s=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);bar.style.transform='scaleX('+Math.min(Math.max(s,0),1)+')';}
+  addEventListener('scroll',up,{passive:true});up();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  function count(b){var m=b&&b.textContent.match(/^(\D*)(\d+)(.*)$/);if(!m)return;var n=+m[2],t0=null;
+    function f(ts){t0=t0||ts;var p=Math.min((ts-t0)/1100,1);b.textContent=m[1]+Math.round(n*(1-Math.pow(1-p,3)))+m[3];if(p<1)requestAnimationFrame(f);}
+    b.textContent=m[1]+'0'+m[3];requestAnimationFrame(f);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;var t=e.target;t.classList.add('in');io.unobserve(t);
+    setTimeout(function(){t.style.transitionDelay='';},1800);
+    if(t.classList.contains('tile'))count(t.querySelector('b'));
+  });},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('h2,.about .ph,.about p,.exp .ph,.skills .ph,.lists h4,.lists li,.cards article,.state p.big,.tile,.contact a.l,.contact .ph,.res .cap').forEach(function(el){
+    var i=Array.prototype.indexOf.call(el.parentNode.children,el);
+    el.classList.add('rv');if(el.tagName==='LI')el.classList.add('l');
+    el.style.transitionDelay=(Math.min(i,6)*0.1)+'s';io.observe(el);
+  });
+})();
+</script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav=document.querySelector('.nav'),totop=document.querySelector('.totop');
+  var wipe=document.createElement('div');wipe.className='wipe';wipe.innerHTML='<span></span>';document.body.appendChild(wipe);
+  var chip=document.createElement('div');chip.className='chip';chip.innerHTML='<b></b><span></span>';document.body.appendChild(chip);
+  var labels={top:'Back to top \u2191',about:'About me \u270E',services:'Services \u270E',skills:'Skills \u270E',work:'My work \u270E',results:'Results \u270E',contact:'Let\u2019s talk \u270E'};
+  var secs=[['#top','01','Intro','top'],['#work','02','My work','work'],['#about','03','About me','about'],['#services','04','Services','services'],['#skills','05','Skills','skills'],['.state','06','Hello','skills'],['#results','07','Results','results'],['#contact','08','Contact','contact']];
+  function natTop(el){var y=0,n=el.previousElementSibling;while(n){var p=getComputedStyle(n).position;if(p!=='fixed'&&p!=='absolute')y+=n.offsetHeight;n=n.previousElementSibling;}return y;}
+  var pages=[].slice.call(document.querySelectorAll('.page'));
+  function setTops(){pages.forEach(function(p){p.style.top=Math.min(0,innerHeight-p.offsetHeight)+'px';});}
+  function depth(){if(reduce)return;pages.forEach(function(p,i){var nx=pages[i+1];if(!nx)return;var v=Math.min(Math.max((innerHeight-nx.getBoundingClientRect().top)/innerHeight,0),1);p.style.setProperty('--p',v.toFixed(3));});}
+  setTops();addEventListener('resize',setTops);addEventListener('load',setTops);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(setTops);
+  var busy=false,ease='cubic-bezier(.7,0,.3,1)';
+  function go(id){
+    var t=document.getElementById(id);if(!t)return;
+    var y=id==='top'?0:Math.max(natTop(t)-nav.offsetHeight,0);
+    if(reduce){scrollTo({top:y,behavior:'instant'});return;}
+    if(busy)return;busy=true;
+    wipe.firstChild.textContent=labels[id]||'';
+    wipe.animate([{transform:'translateX(-105%)'},{transform:'translateX(0)'}],{duration:480,easing:ease,fill:'forwards'}).onfinish=function(){
+      scrollTo({top:y,behavior:'instant'});
+      setTimeout(function(){
+        wipe.animate([{transform:'translateX(0)'},{transform:'translateX(105%)'}],{duration:520,easing:ease,fill:'forwards'}).onfinish=function(){wipe.getAnimations().forEach(function(a){a.cancel();});busy=false;};
+      },280);
+    };
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;
+    var id=a.getAttribute('href').slice(1);if(!document.getElementById(id))return;
+    e.preventDefault();go(id);
+  });
+  var ticking=false,cur=-1;
+  function spy(){
+    ticking=false;
+    depth();var y=scrollY+innerHeight*.45,i=0;
+    secs.forEach(function(s,k){var el=document.querySelector(s[0]);if(el&&natTop(el)<=y)i=k;});
+    var sk=document.getElementById('services');
+    totop.classList.toggle('show',scrollY>natTop(sk)-innerHeight*.5);
+    chip.classList.toggle('show',i>0);
+    if(i===cur)return;cur=i;
+    var s=secs[i];
+    chip.firstChild.textContent=s[1];chip.lastChild.textContent=s[2];
+    chip.classList.remove('flip');void chip.offsetWidth;chip.classList.add('flip');
+    document.querySelectorAll('.links a').forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+s[3]);});
+  }
+  addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(spy);}},{passive:true});
+  addEventListener('resize',spy);spy();
+})();
+</script>
+</body>
+</html>
